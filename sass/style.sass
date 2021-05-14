@@ -58,10 +58,12 @@ body
         background-color: #fff
   &__dots
     z-index: 5
+    opacity: 0
     display: flex
     justify-content: center
     align-items: center
     margin: -28px 15px 0
+    transition: all 0.4s
     button
       background-color: #a6a6a6
       border: none
@@ -69,18 +71,13 @@ body
       height: 8px
       border-radius: 50%
       font-size: 0
+      // animation: fade 0.4s ease-in-out
     li.carousel__dot_active
       button
         background-color: #000000
         animation: fade 0.4s ease-in-out
   &__dot
     padding: 0 7.5px
-
-@keyframes fade
-  0%
-    opacity: 0.5
-  100%
-    opacity: 1
 
 .uploader
   &__container
@@ -113,3 +110,9 @@ body
     padding-right: 25px
   span
     color: #fff
+
+@keyframes fade
+  0%
+    opacity: 0.5
+  100%
+    opacity: 1
