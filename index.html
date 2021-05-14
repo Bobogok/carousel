@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Courusel</title>
+</head>
+<body>
+  <main class="main">
+    <!-- Carousel -->
+    <div class="carousel" style="display: none">
+      <div class="carousel__container">
+        <!-- Photos in carousel -->
+        <!-- <div class="carousel__item carousel__item_hidden">
+          <div class="carousel__image-container">
+            <img class="carousel__image" src="./img/1.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__image-container">
+            <img class="carousel__image" src="./img/2.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel__item carousel__item_hidden">
+          <div class="carousel__image-container">
+            <img class="carousel__image" src="./img/3.jpg" alt="">
+          </div>
+        </div> -->
+        <!-- Arrows -->
+        <div class="carousel__arrows">
+          <button class="carousel__prev-arrow" type="button">
+            <span class="material-icons">chevron_left</span>
+          </button>
+          <button class="carousel__next-arrow" type="button">
+            <span class="material-icons">chevron_right</span>
+          </button>
+        </div>
+        <!-- End Arrows -->
+        <!-- Dots -->
+        <ul class="carousel__dots">
+        </ul>
+        <!-- End Dots -->
+      </div>
+    </div>
+    <!-- carousel end -->
+    <!-- Upload files -->
+    <div class="uploader">
+      <div class="uploader__container">
+        <input class="uploader__input" name="file" type="file" id="file" accept="image/gif, image/jpeg, image/png" multiple>
+        <label class="uploader__btn" for="file">
+          <span class="uploader__icon material-icons">file_upload</span>
+          <span class="uploader__text">Choose a files</span>
+      </div>
+    </div>
+    <!-- end upload -->
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
