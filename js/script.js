@@ -1,5 +1,4 @@
 const log = console.log;
-const carouselСontainer = document.querySelector('.carousel__container');
 
 class Files {
   constructor() {
@@ -24,6 +23,7 @@ class Files {
   };
 
   getImage(img, i) {
+    const carouselСontainer = document.querySelector('.carousel__container');
     const reader = new FileReader();
     reader.addEventListener('load', (e) => {
       this.src = e.target.result;
@@ -115,7 +115,6 @@ class Carousel {
   showItem(carousel, item) {
     const allCarouselItems = carousel.querySelectorAll('.carousel__item');
     const currentElem = this.currentItem(carousel);
-    log(currentElem);
 
     if (allCarouselItems[currentElem] != undefined)
     allCarouselItems[currentElem].classList.add('carousel__item_hidden');
